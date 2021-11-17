@@ -1,0 +1,22 @@
+%Octave Script
+%Title:        2.3 Funcion Inyectiva, Suprayectiva y biyectiva
+%Descripcion:  Script para graficar las funciones dadas por el profe de calculo
+%              en donde deberemos determinar que tipo de funcion es de esta forma identificar mas facil.
+%Author:       Orlando Mendoza Valentin
+%Date:         16/11/2021
+%Ejercicio:    5
+%Usage:        >>pwd
+%              >>5
+%Notes:        Se necesita el programa Octave, usar su linea de comando
+clear
+pkg load symbolic
+%Declarar dominio de la funcion
+x = (-32:0.1:45);
+%Funcion a graficar
+gx = x;
+%Codigo para graficar
+plot(x,gx,'g','linewidth',3);
+%Nombre de la grafica
+title('g(x)=3vx^3');
+disp ("Esta es una funcion biyectiva")
+grid on;

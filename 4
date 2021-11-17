@@ -1,0 +1,24 @@
+%Octave Script
+%Title:        2.3 Funcion Inyectiva, Suprayectiva y biyectiva
+%Descripcion:  Script para graficar las funciones dadas por el profe de calculo
+%              en donde deberemos determinar que tipo de funcion es de esta forma identificar mas facil.
+%Author:       Orlando Mendoza Valentin
+%Date:         16/11/2021
+%Ejercicio:    4
+%Usage:        >>pwd
+%              >>4
+%Notes:        Se necesita el programa Octave, usar su linea de comand
+
+%Limpiar variables
+clear
+%Declarar dominio de la funcion
+x = (0:0.1:40);
+%Funcion a graficar
+hx = (x.^2);
+%Codigo para graficar
+plot(x,hx,'g','linewidth',3);
+%Nombre de la grafica
+title('h(x)=x^2');
+%Mensajes
+disp ("Esta es una funcion inyectiva")
+grid on;
